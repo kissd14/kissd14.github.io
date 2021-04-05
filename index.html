@@ -3,97 +3,100 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Judit mester</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-
-        <h2>Kreativ konyvelo</h2>
-        <div id="linksContainer">
-            <a>Bemutatkozas</a>
-            <a>Cegvezeto</a>
-            <a>Referenciak</a>
-            <a>Elerhetoseg</a>
-
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Judit mester</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bemutatkozas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cegvezeto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Referenciak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Elerhetoseg</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="container" id="introduction">
-        <img src="pics\bg.jpg" alt="bg.jpg" id="mainpicture">
-        <div class="middle">
-            <h1>Konyveloiroda kaposvaron, a damjanich utcaban</h1>
-            <h3>Keressen fel bennunhet, hogy szemelyre szabott konyvelesi es blabla bla blaaa</h3>
-        </div>
-    </div>
-    <div id="push-down">
-    <div class="iconcontainer">
-        <div>
-            <img src="pics/moneyicon.jpg" alt="">
-            <p class="icon-text">Adóoptimalizálás</p>
-        </div>
-        <div>
-            <img src="pics/moneyicon.jpg" alt="">
-            <p class="icon-text">Könyvelés</p>
-        </div>
-        <div>
-            <img src="pics/moneyicon.jpg" alt="">
-            <p class="icon-text">Bérszámfejtés</p>
-        </div>
-        <div>
-            <img src="pics/moneyicon.jpg" alt="">
-            <p class="icon-text">Adótanácsadás</p>
-        </div>
-        <div>
-            <img src="pics/moneyicon.jpg" alt="">
-            <p class="icon-text">Képviselet ellátása</p>
-        </div>
 
-    </div>
-    <div id="introductiuon-box">
-        <p>=================================</p>
-        <h1 id="intoduction-title">Bemutatkozás</h1>
-        <p>=================================</p>
-    </div>
-    <p id="introduction-text">Jó lenne végre könnyedén elintézni a „papír munkát”?
-        25 éves szakmai tapasztalatommal ismerem a vállalkozásod gondjait, működésének nehézségeit. 
-         Magas színvonalú számviteli és adóügyi szolgáltatással megoldom a  felmerülő problémáidat.
-        Segítek eligazodni a bonyolult „szabályrengetegben”, kérdéseidre napra készen megkapod a választ.
-        Az irodám Kaposváron, a Damjanich utca 6/A földszint 2. alatt található. Könnyen megközelíthető, számos parkolási lehetőség van a közelben.
-        Itt van lehetőséged előre egyeztett időpontban a személyes konzultációra, vagy
-        online lehetőségeken keresztül is tudunk kapcsolatot tartani.
-        Tevékenységemet személyre szabott, korrekt áron végezem.
-        <br><br>
-        Kissné Kóró Judit -mérlegképes könyvelő
-        <br>
-        I [szivecske] könyvelés!
-                
-    </p>
-    <div id="company-container">
-    <h4>Cégvezető</h4>
-    <p>A cég vezetője 25 éve Nyisztor Tivadar.
-        Végzettségei: közgazdász, Corvinus Egyetem.
-        Szakvizsgák:
-        - mérlegképes könyvelő,
-        - adótanácsadó,
-        - könyvvizsgáló.
-        Tagja az adótanácsadók kamarájának.
-        Részt vesz a szakmai továbbképzéseken. Adó és számviteli törvények ismerete naprakész.
-        Vállalkozása 25 éve működik.
-        Az ügyfelek magyar kis és középvállalkozók, orvosok, ügyvédek, zenészek, építőipari és más szakipari
-        vállalkozók, kereskedők.
-    </p>
-    </div>
-    <div id="info">
-        <div id="info-title-container">
-             <p>=================================</p>
-             <h1 id="info-title">kapcsolat</h1>
-             <p>=================================</p>
+    <div class="position-relative" id="introduction-pic">
+        <img src="pics\bg.jpg" alt="bg.jpg" class="img-fluid position-relative full-width" id="mainpicture">
+
+        <div class="carousel-caption position-absolute top-50 start-50 translate-middle" id="main-carousel-caption">
+            <h1 class="font-weight-bold">Konyveloiroda kaposvaron, a damjanich utcaban</h1>
+            <h3 class="font-weight-bold">Keressen fel bennunhet, hogy szemelyre szabott konyvelesi
+                es blabla bla blaaa</h3>
         </div>
-        <p id="info-instruction">Kérjük, az alábbi űrlap segítségével vegye fel irodánkkal a kapcsolatot!</p>
     </div>
+
+    <div id="push-down">
+        <div id="introductiuon-box">
+
+            <h1 id="intoduction-title">Bemutatkozás</h1>
+
+        </div>
+        <p id="introduction-text">Jó lenne végre könnyedén elintézni a „papír munkát”?
+            25 éves szakmai tapasztalatommal ismerem a vállalkozásod gondjait, működésének nehézségeit.
+            Magas színvonalú számviteli és adóügyi szolgáltatással megoldom a felmerülő problémáidat.
+            Segítek eligazodni a bonyolult „szabályrengetegben”, kérdéseidre napra készen megkapod a választ.
+            Az irodám Kaposváron, a Damjanich utca 6/A földszint 2. alatt található. Könnyen megközelíthető, számos
+            parkolási lehetőség van a közelben.
+            Itt van lehetőséged előre egyeztett időpontban a személyes konzultációra, vagy
+            online lehetőségeken keresztül is tudunk kapcsolatot tartani.
+            Tevékenységemet személyre szabott, korrekt áron végezem.
+            <br><br>
+            Kissné Kóró Judit -mérlegképes könyvelő
+            <br>
+            I [szivecske] könyvelés!
+
+        </p>
+        <div id="company-container">
+            <h4>Szolgáltatások</h4>
+            <p class="bold">Vállalkozást alapítanál?</p>
+            <p> Könyvelőt váltanál, mert:</p>
+            <ul>
+                <li>a könyvelőd sosem elérhető?</li>
+                <li>nem hív vissza, pedig megígérte?</li>
+                <li>nem tájékoztat időben a jogszabályi változásokról?</li>
+                <li>nem segít bizonyos dolgokban – mert „ Ez nem könyvelői feladat?”</li>
+            </ul>
+            <p>Fordulj hozzám, hogy átbeszéljük a lehetőségeidet! <br> A vállalkozásod sikeréhez nélkülözhetetlen, a
+                rendszeres, szoros együtt működés a könyvelőddel.
+            </p>
+            <h3>Mert a jó könyvelő háttérből támogat és előre visz!</h3>
+        </div>
+        <div id="info">
+            <div id="info-title-container">
+
+                <h1 id="info-title">kapcsolat</h1>
+
+            </div>
+            <p id="info-instruction">Kérjük, az alábbi űrlap segítségével vegye fel irodánkkal a kapcsolatot!</p>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
