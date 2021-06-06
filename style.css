@@ -17,4 +17,11 @@ h1, h3{
 	bottom: 0px;
 	height: 100%;
 	width: 80%;
+	
 } 
+#main-carousel-caption h1, h3{
+	color: #f2ffff;
+}
+body {
+	background-color: #f2ffff;
+}
